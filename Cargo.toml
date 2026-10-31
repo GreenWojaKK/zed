@@ -654,20 +654,9 @@ ignore = "0.4.22"
 # image's default features minus "avif", which only adds an encoder (rav1e);
 # decoding AVIF would additionally need the non-default "avif-native" feature.
 image = { version = "0.25.1", default-features = false, features = [
-    "bmp",
-    "dds",
-    "exr",
-    "ff",
     "gif",
-    "hdr",
-    "ico",
     "jpeg",
     "png",
-    "pnm",
-    "qoi",
-    "rayon",
-    "tga",
-    "tiff",
     "webp",
 ] }
 imara-diff = { version = "0.2", default-features = false }
