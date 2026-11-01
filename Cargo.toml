@@ -653,6 +653,9 @@ idna = "1.0"
 ignore = "0.4.22"
 # image's default features minus "avif", which only adds an encoder (rav1e);
 # decoding AVIF would additionally need the non-default "avif-native" feature.
+# Modified in the GreenWojaKK/zed fork (branch tpui/v1.26.2-slim-image) for TPUI:
+# removed the bmp, dds, exr, ff, hdr, ico, pnm, qoi, rayon, tga and tiff features.
+# gpui only decodes gif, jpeg, png and webp. See FORK.md.
 image = { version = "0.25.1", default-features = false, features = [
     "gif",
     "jpeg",
